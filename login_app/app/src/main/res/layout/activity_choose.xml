@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradien_background"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="50dp"
+    android:theme="@style/noActionBar"
+
+    tools:context=".loginRegister.activities.ChooseActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginBottom="50sp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mya01" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/saharesized"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButtonAssurence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/radius_btn"
+            android:text="@string/text_assurence"
+            android:textColor="@color/white" />
+
+       <!-- <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButtonSinistre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/radius_btn"
+            android:text="@string/text_sinistre"
+            android:textColor="@color/white" /> -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButtonAssistence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/radius_btn"
+            android:text="@string/text_assistance"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButtonContactUs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Contact Us"
+            android:background="@drawable/btncontact"
+            android:textColor="#5E35B1"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

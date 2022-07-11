@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.login_app">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="my_assur"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".loginRegister.activities.ContactRequest"
+            android:exported="false"
+            android:parentActivityName=".loginRegister.activities.AssuranceManagement" />
+        <activity
+            android:name=".loginRegister.activities.AssuranceManagement"
+            android:exported="false"
+            android:parentActivityName=".loginRegister.activities.AssuranceManagement" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAvjXvM05bpS7RO80kbSPl8hKr5Yf5vJ1A" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".loginRegister.activities.CurrentLocation"
+            android:exported="true"
+            android:parentActivityName=".loginRegister.activities.AssistanceActivity" />
+        <activity
+            android:name=".loginRegister.activities.phonCallActivity"
+            android:exported="false"
+            android:parentActivityName=".loginRegister.activities.AssistanceActivity" />
+        <activity
+            android:name=".loginRegister.activities.AssistanceActivity"
+            android:exported="false"
+            android:parentActivityName=".loginRegister.activities.ChooseActivity" />
+        <activity
+            android:name=".loginRegister.activities.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".loginRegister.activities.ChooseActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".loginRegister.activities.Identifier"
+            android:exported="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".loginRegister.activities.RegisterActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".loginRegister.activities.UsersListActivity"
+            android:screenOrientation="fullSensor" />
+    </application>
+
+</manifest>
